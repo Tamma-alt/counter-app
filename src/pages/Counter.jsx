@@ -28,11 +28,10 @@ import React, { useState } from "react";
   }
   
   return (
-    <div className="container">
-      <Navbar />
-      <h1 className="app-name">Counter App</h1>
+    <div className="container counter">
+      <h1 className="header">Counter App</h1>
 
-      <div className="count-section">
+      <div className="main-section">
         <div className="flex">
         <button className="increment-btn" onClick={incrementButton}>
           +

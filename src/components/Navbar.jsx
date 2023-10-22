@@ -4,21 +4,24 @@ import {Link} from "react-router-dom"
 
 export const Navbar = () => {
     return (
-       <div>
+        <div className="container">
         <nav className="nav">
+              
             <Link to="/" className="brand">Tamma-alt</Link>
-            <ul>
+            <ul className="nav-list">
                 <li>
-                    <Link to="/home">Home</Link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
                     <Link to="/counter">Counter</Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to="/test-error">Test Error</Link>
-                </li>
+                </li> */}
             </ul>
+           
         </nav>
-       </div> 
+        </div> 
+       
     )
 }

@@ -1,1 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+ 
+li,a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.brand {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/* counter */
+.header {
+    text-align: center;
+}
+.main-section{
+    margin: 2rem;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.increment-btn,
+.decrement-btn {
+    width: 25%;
+    background-color: brown;
+    color: white;
+    padding: .7rem 0;
+    border: none;
+    border-radius: 1rem;
+}
+
+input {
+    padding: .6rem;
+    margin: .8rem 0;
+}
