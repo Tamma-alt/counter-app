@@ -15,9 +15,9 @@ export const Navbar = () => {
                 <li>
                     <Link to="/counter">Counter</Link>
                 </li>
-                {/* <li>
+                <li>
                     <Link to="/test-error">Test Error</Link>
-                </li> */}
+                </li>
             </ul>
            
         </nav>

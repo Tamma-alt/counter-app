@@ -1,16 +1,20 @@
-import React from "react"
+import React from "react";
+import { Link } from "react-router-dom";
 
 function TestError() {
-    return (
-        <div>
-            <h1>Opps someething went wrong</h1>
-            <p>This counter app is a free simple counter app designed for counting and keeping tracks of numbers.This application is accessible to web and mobile devices.</p>
-            <button>
-            <a href="/Home">Go Back Home</a>
-            </button>
-        </div>
+  return (
+    <div className="container error">
+      <h1 className="error-header">Opps someething went wrong</h1>
+      <p>something went wrong within the components</p>
+      <button className="go-back">
+        <Link to="/">Go Home...</Link>
+      </button>
 
-    )
+      <footer className="copyright">
+        <p>Copyright &copy; Tamma-alt 2023</p>
+      </footer>
+    </div>
+  );
 }
 
 export default TestError;
