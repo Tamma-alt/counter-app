@@ -1,14 +1,20 @@
 import React from "react";
+import { ErrorBoundary } from "react-error-boundary";
+import CustomErrorFallback from "./CustomErrorFallback";
 import { Link } from "react-router-dom";
 
 function TestError() {
   return (
     <div className="container error">
-      <h1 className="error-header">Opps someething went wrong</h1>
-      <p>something went wrong within the components</p>
-      <button className="go-back">
-        <Link to="/">Go Home...</Link>
+      <ErrorBoundary FallbackComponent={<NoPage />}>
+        <ul>
+          <li></li>
+        </ul>
+        <button className="go-back">
+        <Lin to="/">Go Home...</Lin>
       </button>
+      </ErrorBoundary>
+      
 
       <footer className="copyright">
         <p>Copyright &copy; Tamma-alt 2023</p>

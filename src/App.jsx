@@ -5,18 +5,19 @@ import  Home from "./pages/Home";
 import  Counter  from "./pages/Counter";
 import  TestError from"./pages/TestError";
 import Nopage from"./pages/Nopage"
+import { ErrorBoundary } from "react-error-boundary";
 
 function App() {
 
   return (
     <div className="container">
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/counter" element={<Counter/>}/>
-      <Route path="/test-error" element={<TestError/>}/>
-      <Route path="*" element={<Nopage/>}/>
-    </Routes>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/counter" element={<Counter/>}/>
+        <Route path="/test-error" element={<TestError/>}/>
+        <Route path="*" element={<Nopage/>}/>
+      </Routes>
     </div>
   )
 }
